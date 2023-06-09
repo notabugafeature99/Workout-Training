@@ -58,4 +58,13 @@ class DataController: ObservableObject {
         save(context: context)
     }
     
+    func addWeightData(weightLoad: Int16, date: Date, context: NSManagedObjectContext) {
+        let weightData = WeightData(context: context)
+        weightData.id = UUID()
+        weightData.weightLoad = weightLoad
+        weightData.date = date
+        
+        save(context: context)
+    }
+    
 }

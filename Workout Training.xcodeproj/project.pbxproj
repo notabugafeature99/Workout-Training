@@ -52,10 +52,10 @@
 		8802596A2A26DEF10010391B /* backgroundvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = backgroundvideo.mp4; path = ../../../../Downloads/backgroundvideo.mp4; sourceTree = "<group>"; };
 		8882BBAF2A2C6C6D0046F703 /* DatabaseWorkout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DatabaseWorkout.xcdatamodel; sourceTree = "<group>"; };
 		889198942A2C0B2800ECC89E /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		889A51C02A2C6EB100D16F1D /* Workout Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Workout Training.app"; path = "/Users/tommasocastellanza/Workout Training/build/Debug-iphoneos/Workout Training.app"; sourceTree = "<absolute>"; };
 		889A51C12A2C6F6100D16F1D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		88C7EEAB2A31273500D06869 /* UIImageTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageTransformer.swift; sourceTree = "<group>"; };
 		88C7EEB12A31288900D06869 /* WorkoutData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutData.swift; sourceTree = "<group>"; };
+		88D456652A3249BF008AEC83 /* Workout Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E7E40E2A27AD0300AF8D63 /* ExercisesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesData.swift; sourceTree = "<group>"; };
 		88E7E4122A27B6F700AF8D63 /* ExcerciseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseCardView.swift; sourceTree = "<group>"; };
 		88E7E4162A28095700AF8D63 /* ExcerciseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseInfoView.swift; sourceTree = "<group>"; };
@@ -83,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				8802594C2A25BA370010391B /* Workout Training */,
+				88D456652A3249BF008AEC83 /* Workout Training.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,7 +189,7 @@
 			);
 			name = "Workout Training";
 			productName = "Workout Training";
-			productReference = 889A51C02A2C6EB100D16F1D /* Workout Training.app */;
+			productReference = 88D456652A3249BF008AEC83 /* Workout Training.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

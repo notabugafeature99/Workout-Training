@@ -11,6 +11,9 @@ struct WorkoutExcerciseInfoView: View {
     let workout: Workout
     @State private var currentExcerciseIndex = 0
     @State private var isWorkoutComplete = false
+    @State private var exerciseWeight = ""
+    let previousWeight: Int = 0
+    @FocusState var isInputActive: Bool
     
     var body: some View {
         VStack {
@@ -60,8 +63,35 @@ struct WorkoutExcerciseInfoView: View {
                         Text(excercise.category)
                             .padding()
                         
-                        Text(excercise.setsandreps)
-                            .padding()
+                        ViewThatFits(in: .horizontal) {
+                            HStack() {
+                                Text(excercise.setsandreps)
+                                Spacer()
+                                Text("Weight: ")
+                                TextField(String(previousWeight), text: $exerciseWeight)
+                                    .keyboardType(.numberPad)
+                                    .focused($isInputActive)
+                                    .toolbar {
+                                        ToolbarItemGroup(placement: .keyboard) {
+                                            Spacer()
+
+                                            Button("Done") {
+                                                isInputActive = false
+                                            }
+                                        }
+                                    }
+                                    .multilineTextAlignment(.center)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .stroke(Color.gray, lineWidth: 1)
+                                            
+                                            
+                                    )
+                                    .frame(width: 50)
+                                Text("lbs")
+                                    
+                            }.padding()
+                        }
                         
                         Image(excercise.image)
                             .resizable()
